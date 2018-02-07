@@ -13,19 +13,29 @@ function App() {
           width: 1180px;
           margin: auto;
         }
-
         body {
           margin: 0;
           font-family: 'Open Sans', sans-serif;
         }
-
         div {
           box-sizing: border-box;
         }
-
         a {
           text-decoration: none;
           color: #3260c7;
+        }
+        img {
+          max-width: 100%;
+        }
+        button {
+          padding: 15px;
+          background-color: #0008;
+          border: 0px;
+          color: #fff;
+          font-size: 1em;
+        }
+        button:hover {
+          background-color: #0009;
         }
       `}</style>
       <Switch>

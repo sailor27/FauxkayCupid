@@ -29,7 +29,7 @@ npm install react@15.5.4 react-dom@15.5.4 prop-types@15.5.10 react-router-dom@4.
 ```
 
 ```bash
-npm install webpack@3.4.0 babel-core@6.24.1 babel-loader@7.0.0 babel-preset-es2015@6.24.1 babel-preset-react@6.24.1 webpack-dev-server@2.5.0 react-hot-loader@3.0.0-beta.7 html-webpack-plugin@2.29.0 eslint-loader --save-dev
+npm install webpack@3.4.0 babel-core@6.24.1 babel-loader@7.0.0 babel-preset-es2015@6.24.1 babel-preset-react@6.24.1 webpack-dev-server@2.5.0 react-hot-loader@3.0.0-beta.7 html-webpack-plugin@2.29.0 eslint-loader url-loader@0.6.2 file-loader@1.1.6 --save-dev
 ```
 
 ### CSS dependency
@@ -157,9 +157,19 @@ module.exports = {
         options: {
           emitWarning: true,
           configFile: "./.eslintrc.json"
+        }
+      },
+      {
+        test: /\.(png|gif|jp(e*)g|svg)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 8000,
+            name: 'images/[hash]-[name].[ext]'
           }
-        },
-        {
+        }
+      },
+      {
         test: /\.jsx?$/,
         loader: "babel-loader",
         exclude: /node_modules/,
@@ -173,7 +183,7 @@ module.exports = {
             "styled-jsx/babel"
           ]
         }
-      }
+      },
     ],
   },
 
