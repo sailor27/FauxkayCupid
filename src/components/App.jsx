@@ -12,6 +12,7 @@ function App() {
         .container {
           width: 1180px;
           margin: auto;
+          position:relative;
         }
         body {
           margin: 0;
