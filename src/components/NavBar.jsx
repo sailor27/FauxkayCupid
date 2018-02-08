@@ -20,8 +20,7 @@ const link = {
 };
 
 
-function NavBar(props) {
-  console.log(props);
+function NavBar() {
   return (
     <div className="container">
       <div style={navOuter}>

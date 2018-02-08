@@ -4,8 +4,9 @@ import PropTypes from 'prop-types';
 import slice from '../assets/images/slice.png';
 import NavBar from './NavBar';
 import Footer from './Footer';
-function Error404(props){
 
+function Error404(props){
+  {console.log(props);}
   const errorStyle = {
     display: 'flex',
     height: '800px',
@@ -13,6 +14,7 @@ function Error404(props){
     alignItems: 'center',
   };
   return (
+
     <div>
       <div style={{backgroundColor:'#4fc5d0'}}>
         <NavBar/>

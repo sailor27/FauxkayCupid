@@ -72,6 +72,7 @@ Then answer these questions in the terminal about your style:
       "react"
   ],
   "rules": {
+    "react/jsx-key": 2,
     "react/jsx-uses-vars": 2,
     "react/jsx-uses-react": 2,
     "react/jsx-no-duplicate-props": 2,
@@ -292,3 +293,16 @@ Check for syntax errors
 $ npm run lint-fix
 ```
 Fix syntax errors
+
+### Independent Project Objectives:
+
+
+* Development environment is fully-functional, including Babel transpiling, Webpack module bundling, a development server with hot module replacement, and linting.
+Components are used to create modular UI elements.
+propTypes define data types and shapes for all component props.
+Application successfully uses client-side routing via the React-Router library to create appearance of multiple pages.
+Styles are successfully added using CSS objects.
+Application works as expected.
+Application is in a polished, portfolio-quality state.
+Project was submitted by the Friday deadline.
+Project demonstrates an understanding of this week's concepts. If prompted, you can discuss your code with an instructor using the correct terminology.

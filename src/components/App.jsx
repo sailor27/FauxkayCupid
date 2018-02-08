@@ -4,7 +4,7 @@ import Error404 from './Error404';
 import Home from './Home';
 import Press from './Press';
 
-function App(props) {
+function App() {
   return (
     <div>
       <style jsx global>{`
