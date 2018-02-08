@@ -5,17 +5,17 @@ function Footer() {
   return (
     <div className="footer">
       <div className="flex container">
-        <Link className="link" to="#">Apps</Link>
-        <Link className="link" to="#">About</Link>
+        <Link className="link" to="/apps">Apps</Link>
+        <Link className="link" to="/About">About</Link>
         <Link className="link" to="/press">Press</Link>
-        <Link className="link" to="#">Careers</Link>
-        <Link className="link" to="#">Support</Link>
-        <Link className="link" to="#">Blog</Link>
-        <Link className="link" to="#">Tech Blog</Link>
-        <Link className="link" to="#">Atlanta Dating</Link>
-        <Link className="link" to="#">Privacy Policy</Link>
-        <Link className="link" to="#">Terms</Link>
-        <Link className="link" to="#">Safety Tips</Link>
+        <Link className="link" to="/Careers">Careers</Link>
+        <Link className="link" to="/Support">Support</Link>
+        <Link className="link" to="/Blog">Blog</Link>
+        <Link className="link" to="/TechBlog">Tech Blog</Link>
+        <Link className="link" to="/AtlantaDating">Atlanta Dating</Link>
+        <Link className="link" to="/PrivacyPolicy">Privacy Policy</Link>
+        <Link className="link" to="/Terms">Terms</Link>
+        <Link className="link" to="/SafetyTips">Safety Tips</Link>
       </div>
 
       <style jsx global>{`

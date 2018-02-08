@@ -19,16 +19,18 @@ const link = {
   color:'#fff',
 };
 
-function NavBar() {
+
+function NavBar(props) {
+  console.log(props);
   return (
     <div className="container">
       <div style={navOuter}>
         <Link to="/"><img style={{height: '33px', display: 'block'}} src={colorLogo} /></Link>
         <div>
-          <Link style={link} to="#">About</Link>
-          <Link style={link} to="#">Careers</Link>
-          <Link style={link} to="#">Support</Link>
-          <Link style={link} to="#">Press</Link>
+          <Link style={link} to="/About">About</Link>
+          <Link style={link} to="/Careers">Careers</Link>
+          <Link style={link} to="/Support">Support</Link>
+          <Link style={link} to="/Press">Press</Link>
         </div>
       </div>
     </div>

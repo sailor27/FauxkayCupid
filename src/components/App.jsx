@@ -1,9 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Error404 from './Error404';
 import Home from './Home';
 import Press from './Press';
 
-function App() {
+function App(props) {
   return (
     <div>
       <style jsx global>{`
@@ -42,6 +43,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/press' component={Press} />
+        <Route component={Error404} />
       </Switch>
     </div>
 
